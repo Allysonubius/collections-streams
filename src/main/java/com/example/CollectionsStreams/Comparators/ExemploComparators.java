@@ -20,16 +20,16 @@ public class ExemploComparators {
         //Impressão
         System.out.println (estudantes);
         estudantes.sort ((first,second)-> first.getIdade ()- second.getIdade ());
-        System.out.println ("Ordem nautal dos números - idade ---");
+        System.out.println ("--- Ordem nautal dos números - idade ---");
         System.out.println (estudantes);
         estudantes.sort((firts,second)-> second.getIdade () - firts.getIdade ());
-        System.out.println ("Ordem reversa dos números - idade");
+        System.out.println ("--- Ordem reversa dos números - idade ---");
         System.out.println (estudantes);
         estudantes.sort((Comparator.comparingInt (Estudante::getIdade)));
         System.out.println ("---Ordem natural dos números - idade (method references) ---");
         System.out.println (estudantes);
         estudantes.sort((Comparator.comparingInt (Estudante::getIdade).reversed ()));
-        System.out.println ("--Ordem reversa dos números - idade (Method reference) ---");
+        System.out.println ("--- Ordem reversa dos números - idade (Method reference) ---");
         System.out.println (estudantes);
         Collections.sort(estudantes);
         System.out.println ("--- Ordem nautural dos numeros - idade (Interface Comparable) ---");
